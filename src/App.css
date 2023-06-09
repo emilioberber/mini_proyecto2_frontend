@@ -26,3 +26,19 @@
   height: 50px;
   margin-top: 5px;
 }
+
+.card-header, .card-footer {
+  background-color: #0063404d !important;
+}
+
+.card-body {
+  background-color: #00634018 !important;
+}
+
+.card-body .input-group > span {
+  background-color: #00634018 !important;
+}
+
+.btn {
+  opacity: 0.8;
+}

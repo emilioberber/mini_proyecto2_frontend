@@ -3,6 +3,7 @@ import { useState } from "react";
 import Axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css'; // IMPORTANDO BOOTSTRAP
 import Swal from 'sweetalert2'
+import Logo from './components/logo'
 
 function App() {
   const [nombre, setNombre] = useState("");
@@ -138,7 +139,9 @@ function App() {
   <div className='App'>
     <div className="container">
 
-    <div className="card text-center">
+    <Logo/>
+
+    <div className="card text-center mb-5">
       <div className="card-header">
         GESTIÓN EMPLEADOS STARBUCKS
       </div>
@@ -202,7 +205,7 @@ function App() {
       </div>
     </div>
 
-    <table className="table table-striped">
+    <table className="table table-striped pt-5">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -231,7 +234,7 @@ function App() {
                             onClick={()=>{
                               editarEmpleado(val);
                             }}
-                            className="btn btn-info">Editar</button>
+                            className="btn btn-secondary">Editar</button>
                             <button type="button" onClick={()=>{
                               deleteEmple(val);
                             }} className="btn btn-danger">Eliminar</button>
